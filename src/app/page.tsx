@@ -94,8 +94,6 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-100 via-white to-blue-200 text-gray-800 px-6 py-12 font-sans flex flex-col items-center justify-center transition-colors duration-500">
-      <h1 className="text-4xl font-semibold mb-8 text-center">Choose Your Language</h1>
-
       <div className="flex flex-wrap justify-center gap-4 mb-10">
         {flags.map(({ code, label, Component }) => (
           <button
