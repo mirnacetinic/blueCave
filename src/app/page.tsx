@@ -7,6 +7,7 @@ import CN from 'country-flag-icons/react/3x2/CN';
 import IN from 'country-flag-icons/react/3x2/IN';
 import GB from 'country-flag-icons/react/3x2/GB';
 import Image from 'next/image';
+import { FlagComponent } from 'country-flag-icons/react/1x1';
 
 type LanguageCode = 'en' | 'fr' | 'es' | 'cn' | 'in' | 'us';
 
@@ -78,7 +79,7 @@ Al dejar una reseña, nos ayudan mucho — nos permite trabajar más durante el 
   },
 };
 
-const flags: { code: LanguageCode; label: string; Component: React.ComponentType<any> }[] = [
+const flags: { code: LanguageCode; label: string; Component: FlagComponent }[] = [
   { code: 'en', label: 'English', Component: GB },
   { code: 'fr', label: 'Français', Component: FR },
   { code: 'us', label: 'USA', Component: US },
@@ -93,7 +94,7 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-100 via-white to-blue-200 text-gray-800 px-6 py-12 font-sans flex flex-col items-center justify-center transition-colors duration-500">
-      <h1 className="text-4xl font-semibold mb-8 text-center">🌍 Choose Your Language</h1>
+      <h1 className="text-4xl font-semibold mb-8 text-center">Choose Your Language</h1>
 
       <div className="flex flex-wrap justify-center gap-4 mb-10">
         {flags.map(({ code, label, Component }) => (
