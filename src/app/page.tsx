@@ -1,3 +1,5 @@
+export const dynamic = 'force-dynamic';
+
 import Translate from "./components/Translate";
 import { prisma } from "./lib/prisma";
 
